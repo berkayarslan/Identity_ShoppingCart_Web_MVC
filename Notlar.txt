@@ -1,0 +1,19 @@
+Onion Proje
+*** Urun(ID, Adi, Fiyat, Stok, Ozellikler)
+	Kategori(ID,Kategori Adi)
+	SepetBilgileri(ID, UyeId, UrunId)
+	Uye(ID, Ad, Soyad, Adres)
+	Role(Admin, Uye)
+
+*** 5 tablo
+
+***Onion Katmanlý Mimari
+	***Domain(CORE)
+	***Infrastructure
+	***Application
+	***UI(MVC Core App)
+***Tamamen asenkron
+***SQL Server, EF Core, MVC Core, HTML, CSS, JS
+***Identity Framework(User,Role)
+***ViewModel, DTO, AutoMapper
+***Resim Yükleme

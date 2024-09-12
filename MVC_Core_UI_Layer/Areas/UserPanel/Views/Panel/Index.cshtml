@@ -1,0 +1,17 @@
+﻿@using ApplicationLayer.Models.ViewModels.ShoppingCart
+@model IEnumerable<ShoppingCartVM>
+
+<h1>User Panel</h1>
+
+<h3>Products in ShoppingCarts</h3>
+
+<table class="table table-striped">
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+            <td>@item.Amount</td>
+            <td>@item.Price</td>
+        </tr>
+    }
+</table>

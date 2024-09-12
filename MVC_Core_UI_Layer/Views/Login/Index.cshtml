@@ -1,0 +1,21 @@
+﻿@using ApplicationLayer.Models.DTOs
+@model LoginDTO
+
+<form method="post">
+    <table class="table table-bordered">
+        <tr>
+            <td>@Html.DisplayNameFor(x => x.UserName)</td>
+            <td><input asp-for="UserName" /></td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(x => x.Password)</td>
+            <!--Şifreyi sonradan kalır-->
+            <td><input asp-for="Password" type="password" value="spr_123_Admn" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Login" /></td>
+        </tr>
+    </table>
+
+</form>
